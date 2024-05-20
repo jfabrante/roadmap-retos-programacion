@@ -59,7 +59,7 @@ print(name)
 
 def variable_arg_greet(*names):
     for name in names:
-        print(f"Hola", {name})
+        print(f"Hola, {name}")
 
 variable_arg_greet("Python", "Fran", "Padilla", "comunidad")
 
@@ -95,7 +95,7 @@ print(type(36))
 print("Fran".upper())
 
 """
-Variables ocales y globales
+Variables locales y globales
 """
 
 global_var = "Python"
@@ -107,6 +107,7 @@ def hello_python():
     print(f"{local_var}, {global_var}")
 
 print(global_var)
+hello_python()
 # print(local_var) No se puede acceder desde fuera de la función
 
 """
